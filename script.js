@@ -10,6 +10,7 @@ let buttonClick =document.getElementById("generate")
 buttonClick.addEventListener("click", passwordGenerator);
 function passwordGenerator () {
     let length =prompt("How many characters would you like your password to contain?");
+
     if (length < 8){
         alert ("Password must be at least 8 characters");
         return null;
@@ -20,8 +21,16 @@ function passwordGenerator () {
         return null;
     
     }
-
-
+    let hasUpper =confirm("Would you like to include Upper Case characters? Press Ok for YES or Cancel for NO");
+    let hasLower =confirm("Would you like to include Lower Case characters? Press Ok for YES or Cancel for NO");
+    let hasNumber =confirm("Would you like to include numbers? Press OK for YES of Cancel for NO")
+    let hasSpecialCharacter =confirm("Would you like to include Special characters? Press Ok for YES or Cancel for NO");
+    
+    // if ()
+    // alert ("Must select at least 1 character type")
+    // return null
+   
+    
 
 }
 
