@@ -1,5 +1,5 @@
 
-var generateBtn = document.querySelector("#generate");
+let generateBtn = document.querySelector("#generate");
 
 //variables
 let upper = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
@@ -51,8 +51,8 @@ let choices= "";
 
 let password = "";
     for(let i = 0; i <length; i++) {
-    password += Math.floor(Math.random() * choices.length); 
-    
+    let randomNum =Math.floor(Math.random()* choices.length);
+    password += choices[randomNum];
 }
 
 console.log (password);
@@ -61,8 +61,8 @@ return password;
 
  // Write password to the #password input
 function writePassword() {
-    var password = generatePassword();
-    var passwordText = document.querySelector("#password");
+    let password = generatePassword();
+    let passwordText = document.querySelector("#password");
     passwordText.value = password;
 
 }

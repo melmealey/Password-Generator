@@ -15,7 +15,7 @@ N/A
 ## Usage
 
 https://melmealey.github.io/Password-Generator/
-In case you ever need to have a randomly assigned password created, now it's as easy as the click of a button.
+In case you ever need to have a randomly assigned password created, now it's as easy as the click of a button. Just click on 'Generate Password' to get started.
 
 ## Credits
 
