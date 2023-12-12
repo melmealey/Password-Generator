@@ -36,23 +36,27 @@ function generatePassword () {
 
 //Taking all the users choices and creating that random password
 let choices= ""; 
-    if (upper){
+    if (hasUpper){
         choices+= "ABCDEFGHIJKLMNOPQRSTUVWXYZ" 
     }
-    if (lower){
+    if (hasLower){
         choices+= "abcdefghijklmnopqrstuvwxyz"
     }
-    if (number){
+    if (hasNumber){
         choices+= "12345667890"
     }
-    if (specialCharacter){
+    if (hasSpecialCharacter){
         choices+= "!#$%&'()*+,-./:;<=>?@" 
     }
 
 let password = "";
     for(let i = 0; i <length; i++) {
     password += Math.floor(Math.random() * choices.length); 
+    
+}
 
+console.log (password);
+return password;
 }
 
  // Write password to the #password input
@@ -63,8 +67,5 @@ function writePassword() {
 
 }
 
-}
-console.log (password);
-
 // Add event listener to generate button
-generateBtn.addEventListener("click", generatePassword);
+generateBtn.addEventListener("click", writePassword);
